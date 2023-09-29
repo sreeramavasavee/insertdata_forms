@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table border="2px">
+    <tr>
+        <th>sname</th>
+        <th>sno</th>
+        <th>saddress</th>
+    </tr>
+    {% for i in sinfo %}
+    <tr>
+        <td>{{i.sname}}</td>
+        <td>{{i.sno}}</td>
+        <td>{{i.saddress}}</td>
+    </tr>
+    {% endfor %}
+   </table>
+</body>
+</html>
